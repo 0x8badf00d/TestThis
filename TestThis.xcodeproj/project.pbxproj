@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53A4300EC9BA7E660538A632 /* Pods_TestThis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74219A28D8A7B44321D1B0ED /* Pods_TestThis.framework */; };
 		EF7BF46C20B4169100C8B269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7BF46B20B4169100C8B269 /* AppDelegate.swift */; };
 		EF7BF46E20B4169100C8B269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7BF46D20B4169100C8B269 /* ViewController.swift */; };
 		EF7BF47120B4169100C8B269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7BF46F20B4169100C8B269 /* Main.storyboard */; };
@@ -14,6 +15,11 @@
 		EF7BF47620B4169200C8B269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7BF47420B4169200C8B269 /* LaunchScreen.storyboard */; };
 		EF7BF48120B4169200C8B269 /* TestThisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7BF48020B4169200C8B269 /* TestThisTests.swift */; };
 		EF7BF48C20B4169200C8B269 /* TestThisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7BF48B20B4169200C8B269 /* TestThisUITests.swift */; };
+		EF7BF4A020B416AD00C8B269 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7BF49F20B416AD00C8B269 /* Messages.framework */; };
+		EF7BF4A320B416AD00C8B269 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7BF4A220B416AD00C8B269 /* MessagesViewController.swift */; };
+		EF7BF4A620B416AD00C8B269 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7BF4A420B416AD00C8B269 /* MainInterface.storyboard */; };
+		EF7BF4A820B416AE00C8B269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7BF4A720B416AE00C8B269 /* Assets.xcassets */; };
+		EF7BF4AC20B416AE00C8B269 /* TestThisMessage.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EF7BF49D20B416AD00C8B269 /* TestThisMessage.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +37,33 @@
 			remoteGlobalIDString = EF7BF46720B4169100C8B269;
 			remoteInfo = TestThis;
 		};
+		EF7BF4AA20B416AE00C8B269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7BF46020B4169000C8B269 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF7BF49C20B416AD00C8B269;
+			remoteInfo = TestThisMessage;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EF7BF4B020B416AE00C8B269 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EF7BF4AC20B416AE00C8B269 /* TestThisMessage.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6565A05721EE2DBBE6BA7A26 /* Pods-TestThis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestThis.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestThis/Pods-TestThis.release.xcconfig"; sourceTree = "<group>"; };
+		74219A28D8A7B44321D1B0ED /* Pods_TestThis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestThis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE854A9B0A5305436737DC83 /* Pods-TestThis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestThis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestThis/Pods-TestThis.debug.xcconfig"; sourceTree = "<group>"; };
 		EF7BF46820B4169100C8B269 /* TestThis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestThis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7BF46B20B4169100C8B269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF7BF46D20B4169100C8B269 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +77,12 @@
 		EF7BF48720B4169200C8B269 /* TestThisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestThisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7BF48B20B4169200C8B269 /* TestThisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestThisUITests.swift; sourceTree = "<group>"; };
 		EF7BF48D20B4169200C8B269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7BF49D20B416AD00C8B269 /* TestThisMessage.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TestThisMessage.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7BF49F20B416AD00C8B269 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		EF7BF4A220B416AD00C8B269 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		EF7BF4A520B416AD00C8B269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		EF7BF4A720B416AE00C8B269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF7BF4A920B416AE00C8B269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A4300EC9BA7E660538A632 /* Pods_TestThis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,16 +108,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF7BF49A20B416AD00C8B269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7BF4A020B416AD00C8B269 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E742825733F7BAEFAEA82F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE854A9B0A5305436737DC83 /* Pods-TestThis.debug.xcconfig */,
+				6565A05721EE2DBBE6BA7A26 /* Pods-TestThis.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EF7BF45F20B4169000C8B269 = {
 			isa = PBXGroup;
 			children = (
 				EF7BF46A20B4169100C8B269 /* TestThis */,
 				EF7BF47F20B4169200C8B269 /* TestThisTests */,
 				EF7BF48A20B4169200C8B269 /* TestThisUITests */,
+				EF7BF4A120B416AD00C8B269 /* TestThisMessage */,
+				EF7BF49E20B416AD00C8B269 /* Frameworks */,
 				EF7BF46920B4169100C8B269 /* Products */,
+				5E742825733F7BAEFAEA82F7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +147,7 @@
 				EF7BF46820B4169100C8B269 /* TestThis.app */,
 				EF7BF47C20B4169200C8B269 /* TestThisTests.xctest */,
 				EF7BF48720B4169200C8B269 /* TestThisUITests.xctest */,
+				EF7BF49D20B416AD00C8B269 /* TestThisMessage.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +183,26 @@
 			path = TestThisUITests;
 			sourceTree = "<group>";
 		};
+		EF7BF49E20B416AD00C8B269 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF7BF49F20B416AD00C8B269 /* Messages.framework */,
+				74219A28D8A7B44321D1B0ED /* Pods_TestThis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF7BF4A120B416AD00C8B269 /* TestThisMessage */ = {
+			isa = PBXGroup;
+			children = (
+				EF7BF4A220B416AD00C8B269 /* MessagesViewController.swift */,
+				EF7BF4A420B416AD00C8B269 /* MainInterface.storyboard */,
+				EF7BF4A720B416AE00C8B269 /* Assets.xcassets */,
+				EF7BF4A920B416AE00C8B269 /* Info.plist */,
+			);
+			path = TestThisMessage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,13 +210,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF7BF49020B4169200C8B269 /* Build configuration list for PBXNativeTarget "TestThis" */;
 			buildPhases = (
+				50E3BF50BED9A5A7FA6B87AC /* [CP] Check Pods Manifest.lock */,
 				EF7BF46420B4169100C8B269 /* Sources */,
 				EF7BF46520B4169100C8B269 /* Frameworks */,
 				EF7BF46620B4169100C8B269 /* Resources */,
+				EF7BF4B020B416AE00C8B269 /* Embed App Extensions */,
+				BF2343D0E75FA66C2BEFBA41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EF7BF4AB20B416AE00C8B269 /* PBXTargetDependency */,
 			);
 			name = TestThis;
 			productName = TestThis;
@@ -181,6 +263,23 @@
 			productReference = EF7BF48720B4169200C8B269 /* TestThisUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		EF7BF49C20B416AD00C8B269 /* TestThisMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7BF4AD20B416AE00C8B269 /* Build configuration list for PBXNativeTarget "TestThisMessage" */;
+			buildPhases = (
+				EF7BF49920B416AD00C8B269 /* Sources */,
+				EF7BF49A20B416AD00C8B269 /* Frameworks */,
+				EF7BF49B20B416AD00C8B269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestThisMessage;
+			productName = TestThisMessage;
+			productReference = EF7BF49D20B416AD00C8B269 /* TestThisMessage.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +301,9 @@
 						CreatedOnToolsVersion = 9.3.1;
 						TestTargetID = EF7BF46720B4169100C8B269;
 					};
+					EF7BF49C20B416AD00C8B269 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
 				};
 			};
 			buildConfigurationList = EF7BF46320B4169000C8B269 /* Build configuration list for PBXProject "TestThis" */;
@@ -220,6 +322,7 @@
 				EF7BF46720B4169100C8B269 /* TestThis */,
 				EF7BF47B20B4169200C8B269 /* TestThisTests */,
 				EF7BF48620B4169200C8B269 /* TestThisUITests */,
+				EF7BF49C20B416AD00C8B269 /* TestThisMessage */,
 			);
 		};
 /* End PBXProject section */
@@ -249,7 +352,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF7BF49B20B416AD00C8B269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7BF4A820B416AE00C8B269 /* Assets.xcassets in Resources */,
+				EF7BF4A620B416AD00C8B269 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50E3BF50BED9A5A7FA6B87AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestThis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF2343D0E75FA66C2BEFBA41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestThis/Pods-TestThis-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestThis/Pods-TestThis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF7BF46420B4169100C8B269 /* Sources */ = {
@@ -277,6 +428,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF7BF49920B416AD00C8B269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7BF4A320B416AD00C8B269 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +448,11 @@
 			isa = PBXTargetDependency;
 			target = EF7BF46720B4169100C8B269 /* TestThis */;
 			targetProxy = EF7BF48820B4169200C8B269 /* PBXContainerItemProxy */;
+		};
+		EF7BF4AB20B416AE00C8B269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF7BF49C20B416AD00C8B269 /* TestThisMessage */;
+			targetProxy = EF7BF4AA20B416AE00C8B269 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +471,14 @@
 				EF7BF47520B4169200C8B269 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF7BF4A420B416AD00C8B269 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7BF4A520B416AD00C8B269 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -428,16 +600,17 @@
 		};
 		EF7BF49120B4169200C8B269 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE854A9B0A5305436737DC83 /* Pods-TestThis.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestThis/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thetest.test.TestThis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,16 +618,17 @@
 		};
 		EF7BF49220B4169200C8B269 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6565A05721EE2DBBE6BA7A26 /* Pods-TestThis.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestThis/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thetest.test.TestThis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -467,11 +641,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestThisTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thetest.test.TestThisTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -487,11 +657,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestThisTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thetest.test.TestThisTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -506,11 +672,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestThisUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thetest.test.TestThisUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -525,16 +687,46 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestThisUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thetest.test.TestThisUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TestThis;
+			};
+			name = Release;
+		};
+		EF7BF4AE20B416AE00C8B269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestThisMessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thetest.test.TestThis.TestThisMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF7BF4AF20B416AE00C8B269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestThisMessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thetest.test.TestThis.TestThisMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -573,6 +765,15 @@
 			buildConfigurations = (
 				EF7BF49720B4169200C8B269 /* Debug */,
 				EF7BF49820B4169200C8B269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7BF4AD20B416AE00C8B269 /* Build configuration list for PBXNativeTarget "TestThisMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7BF4AE20B416AE00C8B269 /* Debug */,
+				EF7BF4AF20B416AE00C8B269 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
